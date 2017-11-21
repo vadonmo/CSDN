@@ -71,11 +71,8 @@ public class CSDN {
 
 	private Set<String> blogListPageUrls = new TreeSet<>();
 
-	// private Set<String> blogUrls = new TreeSet<>();
-
 	public void visitBlog() throws IOException, InterruptedException {
 		Set<String> blogUrls = addBlogUrl();
-		// blogUrls.add("vadonmo/article/details/78513487");
 		ExecutorService fixedThreadPool = Executors.newFixedThreadPool(3); 
 		blogUrls.add("vadonmo/article/details/78578161");
 		for (String blogUrl : blogUrls) {
@@ -94,7 +91,6 @@ public class CSDN {
 							}
 							is.close();
 						} catch (IOException e) {
-							// TODO Auto-generated catch block
 							e.printStackTrace();
 						}
 					}
