@@ -80,7 +80,6 @@ public class CSDN {
 		blogUrls.add("vadonmo/article/details/78578161");
 		for (String blogUrl : blogUrls) {
 			final String artlUrl = csdnBlogUrl + blogUrl;
-			// if (count % 10 == 0) {
 			fixedThreadPool.execute(new Runnable() {
 				@Override
 				public void run() {
